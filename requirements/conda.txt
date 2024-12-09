@@ -2,4 +2,4 @@ numpy
 diffpy.utils
 pandas
 scipy
-wxpython
+wxpython=4.2.2

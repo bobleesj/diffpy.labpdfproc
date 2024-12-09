@@ -26,9 +26,6 @@ jobs:
     env:
           LATEST_PYTHON_VERSION: "3.13"
     steps:
-      - name: Check macOS version
-        run: |
-          sw_vers
       - name: Check out diffpy.labpdfproc
         uses: actions/checkout@v4
 
