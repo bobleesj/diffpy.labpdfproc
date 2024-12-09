@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
   release:
     types:
       - prereleased
@@ -44,8 +45,8 @@ jobs:
 
       - name: Install diffpy.labpdfproc and requirements
         run: |
-          conda install --file requirements/test.txt
-          conda install --file requirements/conda.txt
+          conda install --file requirements/test.txt \
+                        --file requirements/conda.txt
           pip install gooey
           python -m pip install . --no-deps
 
